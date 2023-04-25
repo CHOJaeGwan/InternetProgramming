@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <h1>welcome to My shop</h1>
+    <fieldset class="header">
+      <legend>버튼</legend>
+      <a href="#" onclick="location.href='index.html'">메인페이지</a>
+      <a href="#" onclick="location.href='login.html'">로그인</a>
+      <a href="#" onclick="location.href='signup.html'">회원가입</a>
+    </fieldset>
+    <form action="#">
+      <fieldset class="body_2">
+        <legend>로그인</legend>
+        <label class="loginBt" for="username">
+          <input
+            type="text"
+            id="Id"
+            name="Id"
+            placeholder="Id"
+            autofocus
+            autocomplete="on"
+            required
+          />
+        </label>
+        <label class="loginBt" for="password">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </label>
+        <button class="loginBt" type="submit">LOGIN</button>
+        <a href="#">Forgot your password?</a>
+      </fieldset>
+    </form>
+  </body>
+</html>
