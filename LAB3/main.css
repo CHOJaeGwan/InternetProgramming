@@ -1,7 +1,7 @@
 * {
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 1020px;
+  max-width: 900px;
   padding: 7px 20px;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
@@ -23,7 +23,7 @@ header > h1 {
 
 @keyframes HeaderAnimate {
   0% {
-    margin-left: 1000px;
+    margin-left: 880px;
   }
   100% {
     margin-left: 0px;
