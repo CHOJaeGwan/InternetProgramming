@@ -4,14 +4,14 @@
     "name": "민소매 강아지 옷!",
     "category": "clothes",
     "price": 15300,
-    "img": "./Images/clothes/sleeveless.png"
+    "img": "Images/Clothes/sleeveless.png"
   },
   {
     "inc": 1,
     "name": "강아지 우비!",
     "category": "clothes",
     "price": 25000,
-    "img": "./Images/clothes/raincoat.png"
+    "img": "Images/Clothes/raincoat.png"
   },
   {
     "inc": 2,
@@ -25,14 +25,14 @@
     "name": "곰돌이 모자 후리스!",
     "category": "clothes",
     "price": 28600,
-    "img": "Images/clothes/bearClothes.png"
+    "img": "Images/Clothes/bearClothes.png"
   },
   {
     "inc": 4,
     "name": "고양이 파자마!",
     "category": "clothes",
     "price": 15800,
-    "img": "Images/clothes/catPajamas.png"
+    "img": "Images/Clothes/catPajamas.png"
   },
 
   {
@@ -40,7 +40,7 @@
     "name": "고양이 해군 모자!",
     "category": "clothes",
     "price": 14600,
-    "img": "Images/clothes/catHat.png"
+    "img": "Images/Clothes/catHat.png"
   },
   {
     "inc": 6,
@@ -54,7 +54,7 @@
     "name": "강아지 사료!",
     "category": "food",
     "price": 83000,
-    "img": "Images/Food/dogFood.png"
+    "img": "Images/Food/dogfood.png"
   },
   {
     "inc": 8,
