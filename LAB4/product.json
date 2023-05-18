@@ -4,14 +4,14 @@
     "name": "민소매 강아지 옷!",
     "category": "clothes",
     "price": 15300,
-    "img": "Images/clothes/sleeveless.png"
+    "img": "./Images/clothes/sleeveless.png"
   },
   {
     "inc": 1,
     "name": "강아지 우비!",
     "category": "clothes",
     "price": 25000,
-    "img": "Images/clothes/raincoat.png"
+    "img": "./Images/clothes/raincoat.png"
   },
   {
     "inc": 2,
