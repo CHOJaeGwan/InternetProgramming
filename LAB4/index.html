@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <script>
+      document.addEventListener("DOMContentLoaded", load);
+      let items = [];
+      let Items = [];
+      let Category = "all";
+      let sortNum = "default";
+      let text = "";
+      let itemArr = [];
+      let count = 6;
+      function load() {
+        items = [];
+        fetch("product.json")
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            for (var i = 0; i < data.length; i++) {
+              var obj = {
+                inc: data[i].inc,
+                name: data[i].name,
+                category: data[i].category,
+                price: data[i].price,
+                img: data[i].img,
+              };
+              items.push(obj);
+            }
+            Items = items;
+            if (Items.length > 6) {
+              itemArr = Items.slice(0, 6);
+            } else {
+              itemArr = Items.slice(0);
+            }
+            setContent();
+          });
+      }
+
+      function setContent() {
+        console.log(itemArr);
+        document.getElementById("ItemList").innerHTML = "";
+        for (var i = 0; i < itemArr.length; i++) {
+          var item =
+            '<div class="Item"><button type="button" class="button"' +
+            "onclick= showDetail(" +
+            itemArr[i].inc +
+            ")>Click to see More</button>" +
+            '<img class="IMG" src="' +
+            itemArr[i].img +
+            '">' +
+            '<div class="Detail" id="' +
+            itemArr[i].name +
+            '">' +
+            "</div></div>";
+          document.getElementById("ItemList").innerHTML += item;
+        }
+      }
+
+      function set() {
+        Items = [];
+        for (var i = 0; i < items.length; i++) {
+          if (Category != "all") {
+            if (
+              checkText(text, items[i].name) &&
+              items[i].category == Category
+            ) {
+              Items.push(items[i]);
+            }
+          } else {
+            if (checkText(text, items[i].name)) {
+              Items.push(items[i]);
+            }
+          }
+        }
+        sortItem(sortNum);
+      }
+
+      function checkText(txt1, txt2) {
+        console.log(txt1);
+        console.log(txt2);
+        console.log(Category);
+        str1 = txt1.toLowerCase();
+        str2 = txt2.toLowerCase();
+        return str2.includes(str1);
+      }
+
+      function setText(value) {
+        text = value;
+      }
+
+      function setCategory(value) {
+        Category = value;
+      }
+
+      function setSort(value) {
+        sortNum = value;
+      }
+
+      function sortItem(value) {
+        if (value == "fromLow") {
+          let sortedItems = Items.sort((a, b) => a.price - b.price);
+          Items = sortedItems;
+          if (Items.length > 6) {
+            itemArr = Items.slice(0, 6);
+          } else {
+            itemArr = Items.slice(0);
+          }
+          setContent();
+        } else if (value == "fromHigh") {
+          let sortedItems = Items.sort((a, b) => b.price - a.price);
+          Items = sortedItems;
+          if (Items.length > 6) {
+            itemArr = Items.slice(0, 6);
+          } else {
+            itemArr = Items.slice(0);
+          }
+          setContent();
+        } else {
+          if (Items.length > 6) {
+            itemArr = Items.slice(0, 6);
+          } else {
+            itemArr = Items.slice(0);
+          }
+          setContent();
+        }
+      }
+
+      function showDetail(num) {
+        document.getElementById(items[num].name).innerHTML =
+          items[num].name + "<br>" + items[num].price + " 원";
+      }
+      window.onscroll = () => {
+        console.log(1);
+        if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+          console.log(1);
+          AddItem();
+        }
+      };
+      function AddItem() {
+        if (count < 22) {
+          count += 1;
+          itemArr = Items.slice(0, count);
+        }
+        setContent();
+      }
+    </script>
+  </head>
+  <body>
+    <header><h1>Welcome to My Pet Shop</h1></header>
+    <nav>
+      <a href="index.html">메인 페이지</a>
+      <a href="login.html">로그인</a>
+      <a href="signup.html">회원가입</a>
+    </nav>
+    <div class="Main">
+      <section class="Items">
+        <div class="SearchBoard">
+          <input
+            name="keyword"
+            id="keyword"
+            type="text"
+            placeholder="검색"
+            class="searchInput"
+            onchange="setText(value)"
+          />
+          <select name="list" onchange="setCategory(value)">
+            <option value="all">All</option>
+            <option value="clothes">Clothes</option>
+            <option value="food">Food</option>
+            <option value="house">House</option>
+            <option value="Accessory">Accessory</option>
+          </select>
+          <select name="sort" onchange="setSort(value)">
+            <option value="default">기본</option>
+            <option value="fromHigh">가격 높은 순</option>
+            <option value="fromLow">가격 낮은 순</option>
+          </select>
+          <input
+            id="search"
+            type="button"
+            value="검색하기"
+            class="searchButton"
+            onclick="{set()}"
+          />
+        </div>
+        <div id="ItemList" class="item"></div>
+      </section>
+      <footer class="foot">
+        <b>공지사항</b>
+        <b>전화번호: 010-1111-2222</b>
+      </footer>
+    </div>
+  </body>
+</html>

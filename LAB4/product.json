@@ -1,0 +1,159 @@
+[
+  {
+    "inc": 0,
+    "name": "민소매 강아지 옷!",
+    "category": "clothes",
+    "price": 15300,
+    "img": "Images/clothes/sleeveless.png"
+  },
+  {
+    "inc": 1,
+    "name": "강아지 우비!",
+    "category": "clothes",
+    "price": 25000,
+    "img": "Images/clothes/raincoat.png"
+  },
+  {
+    "inc": 2,
+    "name": "강아지 패딩!",
+    "category": "clothes",
+    "price": 50700,
+    "img": "Images/clothes/padding.png"
+  },
+  {
+    "inc": 3,
+    "name": "곰돌이 모자 후리스!",
+    "category": "clothes",
+    "price": 28600,
+    "img": "Images/clothes/bearClothes.png"
+  },
+  {
+    "inc": 4,
+    "name": "고양이 파자마!",
+    "category": "clothes",
+    "price": 15800,
+    "img": "Images/clothes/catPajamas.png"
+  },
+
+  {
+    "inc": 5,
+    "name": "고양이 해군 모자!",
+    "category": "clothes",
+    "price": 14600,
+    "img": "Images/clothes/catHat.png"
+  },
+  {
+    "inc": 6,
+    "name": "강아지 키친!",
+    "category": "food",
+    "price": 15900,
+    "img": "Images/Food/dogChicken.png"
+  },
+  {
+    "inc": 7,
+    "name": "강아지 사료!",
+    "category": "food",
+    "price": 83000,
+    "img": "Images/Food/dogFood.png"
+  },
+  {
+    "inc": 8,
+    "name": "강아지 사료 연어 레시피!",
+    "category": "food",
+    "price": 29900,
+    "img": "Images/Food/salmon.png"
+  },
+
+  {
+    "inc": 9,
+    "name": "짜먹는 츄르!",
+    "category": "food",
+    "price": 14880,
+    "img": "Images/Food/catFood.png"
+  },
+  {
+    "inc": 10,
+    "name": "고양이 닭가슴살 간식!",
+    "category": "food",
+    "price": 13200,
+    "img": "Images/Food/catChicken.png"
+  },
+  {
+    "inc": 11,
+    "name": "고양이 에그 집!",
+    "category": "house",
+    "price": 16000,
+    "img": "Images/House/egg.png"
+  },
+  {
+    "inc": 12,
+    "name": "강아지 자이언트 하우스!",
+    "category": "house",
+    "price": 89000,
+    "img": "Images/House/big.png"
+  },
+
+  {
+    "inc": 13,
+    "name": "강아지 포근 하우스!",
+    "category": "house",
+    "price": 26800,
+    "img": "Images/House/fluffy.png"
+  },
+  {
+    "inc": 14,
+    "name": "호박 하우스!",
+    "category": "house",
+    "price": 19000,
+    "img": "Images/House/pumpkin.png"
+  },
+  {
+    "inc": 15,
+    "name": "텐트 하우스!",
+    "category": "house",
+    "price": 35160,
+    "img": "Images/House/tent.png"
+  },
+  {
+    "inc": 16,
+    "name": "주사위하우스!",
+    "category": "house",
+    "price": 15010,
+    "img": "Images/House/dice.png"
+  },
+  {
+    "inc": 17,
+    "name": "강아지 목걸이!",
+    "category": "Accessory",
+    "price": 9500,
+    "img": "Images/Accessory/dogNecklace.png"
+  },
+  {
+    "inc": 18,
+    "name": "고양이 썬글라스!",
+    "category": "Accessory",
+    "price": 11640,
+    "img": "Images/Accessory/sunglass.png"
+  },
+  {
+    "inc": 19,
+    "name": "꽃모양 쿠션!",
+    "category": "Accessory",
+    "price": 14800,
+    "img": "Images/Accessory/cushion.png"
+  },
+  {
+    "inc": 20,
+    "name": "고양이 하트 목걸이!",
+    "category": "Accessory",
+    "price": 3090,
+    "img": "Images/Accessory/heartNecklace.png"
+  },
+  {
+    "inc": 20,
+    "name": "머리핀!",
+    "category": "Accessory",
+    "price": 5400,
+    "img": "Images/Accessory/hairpin.png"
+  }
+]
