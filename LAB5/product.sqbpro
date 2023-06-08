@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/chojaegwan/Desktop/HomeworkRepository/LAB5/product.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="1"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="978"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,7:mainproduct"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="product" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="65"/><column index="2" value="86"/><column index="3" value="76"/><column index="4" value="81"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="SQL 1">INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('민소매 강아지 옷!',  15300, 'Images/Clothes/sleeveless.png',  'clothes');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('강아지 우비!',  25000, 'Images/Clothes/raincoat.png',  'clothes');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('강아지 패딩!',  50700, 'Images/Clothes/padding.png',  'clothes');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('곰돌이 모자 후리스!',  28600, 'Images/Clothes/bearClothes.png',  'clothes');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('고양이 파자마!',  15800, 'Images/Clothes/catPajamas.png',  'clothes');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('고양이 해군 모자!',  14600, 'Images/Clothes/catHat.png',  'clothes');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('강아지 치킨!',  15900, 'Images/Food/dogChicken.png',  'food');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('강아지 사료!',  83000, 'Images/Food/dogfood.png',  'food');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('강아지 사료 연어 레시피!',  29900, 'Images/Food/salmon.png',  'food');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('짜먹는 츄르!',  14880, 'Images/Food/catFood.png',  'food');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('고양이 닭가슴살 간식!',  13280, 'Images/Food/catChicken.png',  'food');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('고양이 에그 집!',  16000, 'Images/House/egg.png',  'house');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('강아지 자이언트 하우스!',  89000, 'Images/House/big.png',  'house');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('강아지 포근 하우스!',  26800, 'Images/House/fluffy.png',  'house');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('호박 하우스!',  19000, 'Images/House/pumpkin.png',  'house');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('텐트 하우스!',  35160, 'Images/House/tent.png',  'house');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('주사위 하우스!',  15010, 'Images/House/dice.png',  'house');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('강아지 목걸이!',  9500, 'Images/Accessory/dogNecklace.png',  'Accessory');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('고양이 썬글라스!',  11640, 'Images/Accessory/sunglass.png',  'Accessory');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('꽃모양 쿠션!',  14800, 'Images/Accessory/cushion.png',  'Accessory');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('고양이 하트 목걸이!',  3090, 'Images/Accessory/heartNecklace.png',  'Accessory');
+INSERT INTO product(product_title, product_price, product_image, product_category) VALUES('모리핀!',  5400, 'Images/Accessory/hairpin.png',  'Accessory');
+
+
+
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
